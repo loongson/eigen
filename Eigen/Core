@@ -242,6 +242,10 @@ using std::ptrdiff_t;
 #include "src/Core/arch/MSA/Complex.h"
 #elif defined EIGEN_VECTORIZE_HVX
 #include "src/Core/arch/HVX/PacketMath.h"
+#elif defined EIGEN_VECTORIZE_LSX
+#include "src/Core/arch/LSX/PacketMath.h"
+#include "src/Core/arch/LSX/TypeCasting.h"
+#include "src/Core/arch/LSX/Complex.h"
 #endif
 
 #if defined EIGEN_VECTORIZE_GPU
